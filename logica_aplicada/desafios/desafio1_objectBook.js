@@ -7,16 +7,3 @@ let bookZero = {
 }
 
 console.log(bookZero)
-
-// 2ª Forma: 
-
-class Book{
-    constructor(title, author){
-        this.title = title
-        this.author = author
-    }
-}
-
-let bookOne = new Book("O alinista", "joaozin")
-
-console.log(bookOne.author)
