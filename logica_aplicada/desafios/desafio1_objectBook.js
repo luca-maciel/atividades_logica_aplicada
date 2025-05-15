@@ -6,4 +6,4 @@ let bookZero = {
     autor: "José Mauro de Vasconcelos",
 }
 
-console.log(bookZero)
+console.log(bookZero);
