@@ -7,7 +7,7 @@
 //     No final, informe o valor total de todos os produtos disponíveis no estoque.
 
 
-let produtos = [
+var produtos = [
     {nome: "Mouse", quantidade: 12, preco: 99.90},
     {nome: "Teclado", quantidade: 5, preco: 199.90},
     {nome: "Monitor", quantidade: 2, preco: 899.90},
@@ -19,9 +19,9 @@ let produtos = [
 ]
 
 function listarProdutosDisponiveis(lista_produtos){
-    let total_produtos = 0;
+    var total_produtos = 0;
     for (let i=0; i < lista_produtos.length; i++){
-        produto = lista_produtos[i]
+        var produto = lista_produtos[i]
         if(produto.quantidade > 0){
             console.log(`Valor total de ${produto.nome} -> ${(produto.quantidade*produto.preco).toFixed(2)}`);
             total_produtos += produto.quantidade*produto.preco;
